@@ -1,3 +1,5 @@
 export interface UserObject {
-    name: string
+    name: string,
+    picture: string
+    
 }

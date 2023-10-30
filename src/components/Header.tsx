@@ -3,6 +3,7 @@ import { headerItems, userInfo } from "@/constants/constants";
 import { NavItems } from "@/models/Header";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
+import { Link as ScrollLink } from 'react-scroll';
 
 const Header: React.FC = () => {
   const [navItem, showNavItems] = useState<boolean>(false);
@@ -22,12 +23,14 @@ const Header: React.FC = () => {
         }`}
       >
         {Object.keys(headerItems).map((item) => (
-          <a
+          <ScrollLink to={headerItems[item as keyof NavItems].page}
+            spy={true}
+            smooth={true}
             className="block md:inline-block cursor-pointer"
             key={headerItems[item as keyof NavItems].label}
           >
             {headerItems[item as keyof NavItems].label}
-          </a>
+          </ScrollLink>
         ))}
       </div>
     </header>

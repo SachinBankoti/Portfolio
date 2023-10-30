@@ -3,8 +3,8 @@ import { NavItems } from "@/models/Header"
 
 
 export const userInfo: UserObject = {
-    name: 'Code for Interview',
-    picture: 'https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg',
+    name: 'Sachin Bankoti',
+    picture: "/my-image.png",
     heading: 'I&#39;m a Software Engineer based in Canada, with a passion for creating elegant and efficient solutions that seamlessly integrate user-friendly experiences. I&#39;ve built websites, desktop applications, and corporate software, leveraging cutting-edge technologies to drive innovation and enhance business processes.',
     about: `
         I am a passionate Software Engineer with a strong background in Web Development, I have been crafting digital experiences for 5 years.
@@ -18,4 +18,13 @@ export const headerItems:NavItems = {
     home: { label: 'Home', page: 'home'},
     about: { label: 'About', page:'about'},
     projects: { label: 'Projects', page:'projects'},
+}
+export const projects = {
+  gmail: { image: 'https://i.ibb.co/3y7mjqn/gmail-clone.jpg' },
+  flipkart: { image: 'https://i.ibb.co/QDt04mP/maxresdefault.jpg' },
+  google: { image: 'https://i.ibb.co/RHpgMcC/google-clone-next.jpg' },
+  indeed: { image: 'https://i.ibb.co/tHkM8dD/indeed-clone.jpg' },
+  crud: { image: 'https://i.ibb.co/wS41qv7/crud-fullstack.jpg' },
+  aws: { image: 'https://i.ibb.co/61756n7/aws-3.jpg' },
+  notes: { image: 'https://i.ibb.co/wCN5CVj/notesapp.jpg' }
 }

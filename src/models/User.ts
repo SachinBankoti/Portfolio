@@ -3,6 +3,7 @@ export interface UserObject {
     picture: string,
     heading: string,
     about: string,
-    skills: Array<string>
+    skills: Array<string>,
+    title:string
 }
 

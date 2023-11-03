@@ -1,6 +1,9 @@
 interface Projects {
     gmail: object,
     flipkart: object,
-    google: object,
-    indeed: object
+    Blog: object,
+    Portfolio: object,
+    ShoppingCart: object,
+    JobListing: object,
+    inShorts:object,
 }

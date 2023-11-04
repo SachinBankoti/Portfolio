@@ -7,11 +7,11 @@ const Projects: React.FC = () => {
   return (
     <section
       id={headerItems.projects.page}
-      className="h-screen flex flex-col text-center justify-center items-center my-40"
+      className="h-full flex flex-col text-center justify-center items-center mt-24 mb-96 lg:my-48 md:my-44"
     >
-      <h1 className={"text-6xl my-6"}>Projects</h1>
+      <h1 className={"text-5xl"}>Projects</h1>
 
-      <div className="flex justify-center items-center text-center break-words flex-wrap mt-3">
+      <div className="flex justify-center items-center text-center break-words flex-wrap mt-1">
         {Object.keys(projects).map((project) => (
           <span
             key={project}
@@ -33,7 +33,6 @@ const Projects: React.FC = () => {
             </ul>
           </span>
         ))}
-        <a href="/Resume.docx" type="__blank">DownloadCV</a>
       </div>
     </section>
   );

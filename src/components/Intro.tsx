@@ -8,7 +8,7 @@ const Intro: React.FC = () => {
   return (
     <section
       id={headerItems.home.page}
-      className="h-screen flex flex-col md:mt-10 text-center justify-center items-center md:flex-row md:text-start"
+      className="lg:h-screen flex flex-col md:mt-10 text-center justify-center items-center md:flex-row md:text-start"
     >
       <div>
         <Image
